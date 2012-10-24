@@ -28,7 +28,19 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
+        
+        <!-- Notifications
+	================================================== -->
+        <script type="text/x-handlebars" data-template-name="notification-center">           
+                <div {{bindAttr class="cssState :message"}}>
+                    <p class="notification-content">{{notification.content}}</p>
+                    <a href="#" class="notification-close">Close</a>
+                </div>
+        </script>
+        <section id="notification" class="clearfix">
+            
+        </section>
+        
         <!-- Primary Page Layout
 	================================================== -->
         <script type="text/x-handlebars">
